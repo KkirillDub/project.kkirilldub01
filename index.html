@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTA Start Page</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- === Панель настроек === -->
+    <button id="settings-btn">⚙️ Настройки</button>
+
+    <div id="settings-panel" class="hidden">
+        <h3>Фон страницы</h3>
+        <div class="bg-options">
+            <img src="bg1.png" class="bg-choice">
+            <img src="bg2.jpg" class="bg-choice">
+            <img src="bg3.jpg" class="bg-choice">
+        </div>
+        <h3>Цвет текста</h3>
+        <input type="color" id="text-color">
+        <h3>Цвет кнопок</h3>
+        <input type="color" id="btn-color">
+    </div>
+
+    <!-- === ЧАСЫ И ДАТА === -->
+    <div class="time-section">
+        <div id="clock">00:00</div>
+        <div id="date">1 Января 2025</div>
+    </div>
+
+    <!-- === ЛОГО === -->
+    <header class="header">
+        <h1 class="logo">GTA Browser Start</h1>
+    </header>
+
+    <main class="main-content">
+
+        <!-- === ПОИСК === -->
+        <section class="search-section">
+            <form id="search-form" action="#" method="GET">
+                <select id="search-engine">
+                    <option value="https://www.google.com/search?q=" selected>Google</option>
+                    <option value="https://yandex.ru/search/?text=">Яндекс</option>
+                    <option value="https://duckduckgo.com/?q=">DuckDuckGo</option>
+                    <option value="AI">ChatGPT AI</option>
+                </select>
+                <input type="text" id="search-input" placeholder="Введите запрос..." autocomplete="off">
+                <button type="submit">🔍</button>
+            </form>
+        </section>
+
+        <!-- === ПЛИТКИ === -->
+        <div class="tiles">
+            <a href="https://vk.com" target="_blank" class="tile">
+                <img src="icons/vk.svg" alt="ВКонтакте">
+                <span>ВКонтакте</span>
+            </a>
+            <a href="https://t.me" target="_blank" class="tile">
+                <img src="icons/telegram.svg" alt="Telegram">
+                <span>Telegram</span>
+            </a>
+            <a href="https://youtube.com" target="_blank" class="tile">
+                <img src="icons/youtube.svg" alt="YouTube">
+                <span>YouTube</span>
+            </a>
+            <a href="https://github.com" target="_blank" class="tile">
+                <img src="icons/github.svg" alt="GitHub">
+                <span>GitHub</span>
+            </a>
+            <a href="https://store.steampowered.com" target="_blank" class="tile">
+                <img src="icons/steam.svg" alt="Steam">
+                <span>Steam</span>
+            </a>
+        </div>
+
+    </main>
+
+    <!-- === ФУТЕР === -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p>Email: kirilldub@example.com</p>
+                <p>Телефон: +7 123 456-78-90</p>
+            </div>
+            <div class="footer-section">
+                <h3>Ссылки</h3>
+                <a href="#">Главная</a>
+                <a href="#">О нас</a>
+                <a href="#">Контакты</a>
+            </div>
+            <div class="footer-section">
+                <h3>Соцсети</h3>
+                <a href="https://vk.com" target="_blank">VK</a>
+                <a href="https://t.me" target="_blank">Telegram</a>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+            </div>
+        </div>
+        <p class="footer-bottom">© 2025 KirillDub. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
